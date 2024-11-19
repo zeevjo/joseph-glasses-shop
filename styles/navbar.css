@@ -1,0 +1,24 @@
+@import url("/styles/root.css");
+
+.navbar-container {
+  width: 100%;
+  background-color: var(--base-yellow);
+  border-top: black 1px solid;
+  border-bottom: black 20px solid;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 55px;
+}
+
+.navbar-links {
+  text-decoration: none;
+  font-family: "Outfit", serif;
+  font-weight: 200;
+  color: black;
+}
