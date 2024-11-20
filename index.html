@@ -9,16 +9,36 @@
       type="image/x-icon"
       href="/assets/favicon/optical_4009052.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="site-container">
       <nav class="navbar-container">
-        <ul class="navbar-list">
-          <a class="navbar-links" href="/index.html"><li>Home</li></a>
-          <a class="navbar-links" href="/glasses.html"><li>Glasses</li></a>
-          <a class="navbar-links" href="/about"><li>About</li></a>
-        </ul>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn">
+          <img  src="/assets/icons/navbar/burger-menu.svg" alt="burger menu" />
+        </label>
+
+        <div class="menu">
+          <label for="menu-toggle" class="close-btn">✖</label>
+          <ul class="navbar-links">
+            <a href="/index.html">
+              <li>Home</li>
+            </a>
+            <a href="/products.htm">
+              <li>Glasses</li>
+            </a>
+            <a href="/about.html">
+              <li>About</li>
+            </a>
+          </ul>
+        </div>
+
+        <img
+          class="shopping-cart"
+          src="./assets/icons/navbar/shopping-cart.svg"
+          alt=""
+        />
       </nav>
 
       <div class="hero-container">
@@ -33,9 +53,6 @@
         ></video>
         <div class="hero-content">
           <h1 class="hero-heading">Joseph</h1>
-          <!-- <h5 class="hero-sub-heading">
-            Other elements or text over the video.
-          </h5> -->
         </div>
       </div>
     </div>
