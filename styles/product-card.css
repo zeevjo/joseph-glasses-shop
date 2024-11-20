@@ -1,0 +1,72 @@
+@import url("/styles/root.css");
+
+@media (min-width: 320px) {
+  .bs-img-container {
+    text-align: center;
+    max-width: 260px;
+    min-height: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #faf6e3;
+    box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+    -webkit-box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+    -moz-box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-description {
+    width: 75%;
+    margin-bottom: 8%;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .images img {
+    display: none;
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .bs-buttons-container {
+    margin-top: 6%;
+  }
+
+  .bs-buttons-container label {
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .bs-color-choice {
+    border-radius: 50%;
+    width: 12%;
+    border: var(--deep-blue) 2px solid;
+  }
+
+  input#bs-img-1:checked ~ .images label[for="bs-img-1"] img,
+  input#bs-img-2:checked ~ .images label[for="bs-img-2"] img {
+    display: block;
+  }
+
+  input#bs-c2-img-1:checked ~ .images label[for="bs-c2-img-1"] img,
+  input#bs-c2-img-2:checked ~ .images label[for="bs-c2-img-2"] img {
+    display: block;
+  }
+
+  input#bs-c3-img-1:checked ~ .images label[for="bs-c3-img-1"] img,
+  input#bs-c3-img-2:checked ~ .images label[for="bs-c3-img-2"] img {
+    display: block;
+  }
+
+  input#bs-c4-img-1:checked ~ .images label[for="bs-c4-img-1"] img,
+  input#bs-c4-img-2:checked ~ .images label[for="bs-c4-img-2"] img {
+    display: block;
+  }
+}
