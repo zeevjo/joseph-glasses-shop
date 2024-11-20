@@ -1,0 +1,88 @@
+@import url("/styles/root.css");
+
+@media (min-width: 320px) {
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 20px solid black;
+    background-color: black;
+  }
+
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+    object-fit: contain;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    text-shadow: 1px 1px 0 var(--base-yellow), -1px 1px 0 var(--base-yellow),
+      1px -1px 0 var(--base-yellow), -1px -1px 0 var(--base-yellow);
+  }
+
+  .hero-heading {
+    font-family: "Outfit", serif;
+    font-weight: 500;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 425px) {
+  .hero-video {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-video {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    height: 50vh;
+  }
+  .hero-video {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-container {
+    height: 60vh;
+  }
+  .hero-video {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+@media (min-width: 2000px) {
+  .hero-container {
+    height: 35vh;
+  }
+  .hero-video {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+@media (min-width: 2560px) {
+  .hero-container {
+    height: 35vh;
+  }
+  .hero-video {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('/styles/root.css');
+@import url('/styles/hero.css');
+@import url('/styles/navbar.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-container{
+    min-height: 100vh;
+    width: 100%;
+}

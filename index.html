@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joseph</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon/optical_4009052.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="site-container">
+      <nav class="navbar-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn">
+          <img  src="/assets/icons/navbar/burger-menu.svg" alt="burger menu" />
+        </label>
+
+        <div class="menu">
+          <label for="menu-toggle" class="close-btn">✖</label>
+          <ul class="navbar-links">
+            <a href="/index.html">
+              <li>Home</li>
+            </a>
+            <a href="/products.htm">
+              <li>Glasses</li>
+            </a>
+            <a href="/about.html">
+              <li>About</li>
+            </a>
+          </ul>
+        </div>
+
+        <img
+          class="shopping-cart"
+          src="./assets/icons/navbar/shopping-cart.svg"
+          alt=""
+        />
+      </nav>
+
+      <div class="hero-container">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="hero-video"
+          src="./assets/videos/hero-video.mp4"
+          type="video/mp4"
+        ></video>
+        <div class="hero-content">
+          <h1 class="hero-heading">Joseph</h1>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
