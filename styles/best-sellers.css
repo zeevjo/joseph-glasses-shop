@@ -1,0 +1,30 @@
+.best-sellers-container {
+  width: 100%;
+  min-height: 85px;
+  display: flex;
+  justify-content: center;
+}
+
+.bs-title {
+  width: 90%;
+  max-width: 300px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.bs-head {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 1.7em;
+  align-self: flex-start;
+}
+
+.bs-item {
+  height: 100%;
+}
+
+.bs-hand-icon {
+  margin-top: 10px;
+}
