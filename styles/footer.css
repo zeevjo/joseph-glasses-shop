@@ -1,0 +1,39 @@
+@import url("/styles/root.css");
+
+.footer-container {
+  border: 5px solid var(--deep-blue);
+  background-color: var(--light-cream);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  min-height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-container {
+  width: 80%;
+  max-width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cu-icons {
+  min-width: 25px;
+  max-width: 10%;
+}
+
+.facebook-icon img {
+  max-width: 20px;
+}
+
+.mail-icon img {
+  max-width: 35px;
+}
+
+.phon-icon i {
+  font-size: 25px;
+}
