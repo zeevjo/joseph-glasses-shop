@@ -14,8 +14,12 @@
 
 body{
   background-color: var(--light-cream);
+  /* border: 2px solid red; */
 }
 
 .site-container{
-    /* min-height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }

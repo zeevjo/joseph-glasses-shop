@@ -1,3 +1,7 @@
+@import url("/animations/slide-in-from-right.css");
+@import url("/animations/slide-in-from-left.css");
+@import url("/animations/fade-in.css");
+
 @media (min-width: 320px) {
   .best-sellers-container {
     width: 100%;
@@ -22,6 +26,18 @@
     font-weight: 500;
     font-size: 1.7em;
     align-self: flex-start;
+    opacity: 0;
+    animation: fade-in 3s ease-in forwards;
+  }
+
+  .bs-right-hand-icon {
+    animation: slide-in-from-right 3s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .bs-left-hand-icon {
+    animation: slide-in-from-left 3s ease-out;
+    animation-fill-mode: forwards;
   }
 
   .bs-item {
