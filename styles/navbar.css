@@ -12,6 +12,10 @@
     align-items: center;
     background-color: var(--light-cream);
     border-bottom: var(--deep-blue) 10px solid;
+
+    position: sticky;
+    top: 0px;
+    z-index: 100000000;
   }
 
   #menu-toggle {
@@ -87,6 +91,10 @@
     background-color: var(--light-cream);
     border-top: var(--deep-blue) 1px solid;
     border-bottom: var(--deep-blue) 15px solid;
+
+    position: sticky;
+    top: 0px;
+    z-index: 100000000;
   }
 
   #menu-toggle,
