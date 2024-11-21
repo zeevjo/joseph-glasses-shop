@@ -1,5 +1,8 @@
 @import url("/styles/root.css");
 @import url("/animations/slide-in.css");
+@import url("/animations/slide-in-from-top.css");
+@import url("/animations/slide-in-from-left.css");
+@import url("/animations/slide-in-from-right.css");
 
 @media (min-width: 320px) and (max-width: 767px) {
   .navbar-container {
@@ -28,17 +31,21 @@
     justify-content: space-between;
     width: calc(1em + 3vw);
     cursor: pointer;
+    animation: slide-in-from-left 3s ease-out;
+    animation-fill-mode: forwards;
   }
 
   .shopping-cart {
     width: calc(1em + 6vw);
+    animation: slide-in-from-right 3s ease-out;
+    animation-fill-mode: forwards;
   }
 
   .menu {
     display: none;
     position: absolute;
     top: 0;
-    left: 49.99%;
+    right: 0.01%;
     background-color: var(--light-cream);
     width: 100%;
     padding: 5%;
@@ -51,7 +58,7 @@
     border-bottom-right-radius: 10px;
     border: var(--deep-blue) solid 4px;
     transform: translateX(-50%);
-    animation: slide-in 1.5s ease-out forwards;
+    animation: slide-in-from-top 1.5s ease-out forwards;
   }
 
   .menu a {
@@ -80,7 +87,7 @@
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-container {
     width: 100%;
     padding: 2%;
@@ -97,6 +104,26 @@
     position: sticky;
     top: 0px;
     z-index: 100000000;
+  }
+
+  .navbar-l-item {
+    display: inline-block;
+    position: relative;
+  }
+
+  .navbar-l-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--deep-blue);
+    transition: width 0.5s ease;
+  }
+
+  .navbar-l-item:hover::after {
+    width: 100%;
   }
 
   #menu-toggle,
@@ -124,5 +151,18 @@
     font-family: "Outfit", serif;
     font-weight: 300;
     font-size: 1.2em;
+  }
+
+  .nb-li-about {
+    animation: slide-in-from-right 3s ease-out;
+    animation-fill-mode: forwards;
+  }
+  .nb-li-home {
+    animation: slide-in-from-left 3s ease-out;
+    animation-fill-mode: forwards;
+  }
+  .nb-li-glasses {
+    animation: slide-in-from-top 2.2s ease-out;
+    animation-fill-mode: forwards;
   }
 }

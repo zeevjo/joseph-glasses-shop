@@ -1,4 +1,6 @@
 @import url("/styles/root.css");
+@import url("/animations/slide-in-from-top.css");
+@import url("/animations/fade-in.css");
 
 @media (min-width: 319px) {
   .hero-container {
@@ -35,7 +37,9 @@
     font-family: "Outfit", serif;
     font-weight: 500;
     font-size: 50px;
-    /* text-shadow: 5px 3px 3px rgba(42,54,99,0.53); */
+    position: relative;
+    opacity: 0; 
+    animation: fade-in 2.7s ease-in forwards;
   }
 }
 
@@ -69,7 +73,7 @@
   }
 }
 
-@media (min-width: 1500px){
+@media (min-width: 1500px) {
   .hero-video {
     transform: translate(-50%, -50%) scaleX(0.9);
   }
