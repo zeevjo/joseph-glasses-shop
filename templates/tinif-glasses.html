@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/favicon/glasses_14091684.png"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Glasses</title>
+  </head>
+  <body>
+    <div class="site-container">
+      <nav class="navbar-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn">
+          <img src="../assets/icons/navbar/burger-menu.svg" alt="burger menu" />
+        </label>
+
+        <div class="menu">
+          <label for="menu-toggle" class="close-btn">✖</label>
+          <ul class="navbar-links">
+            <a href="../index.html">
+              <li class="navbar-l-item nb-li-home">Home</li>
+            </a>
+            <a href="/products.htm">
+              <li class="navbar-l-item nb-li-glasses">Glasses</li>
+            </a>
+            <a href="/about.html">
+              <li class="navbar-l-item nb-li-about">About</li>
+            </a>
+          </ul>
+        </div>
+
+        <img
+          class="shopping-cart"
+          src="../assets/icons/navbar/shopping-cart.svg"
+          alt="shopping cart"
+        />
+      </nav>
+
+      <div class="glasses-card-container">
+        <input type="radio" id="image-1" name="image-switch" checked />
+        <input type="radio" id="image-2" name="image-switch" />
+        <input type="radio" id="image-3" name="image-switch" />
+
+        <div class="image-container">
+          <img
+            class="image image-1"
+            src="../assets/glasses-pics/glasses/brands/SpectraStyle/Eyeglasses/fall/TINIF/big-pic/tinif-color-black-silver-pos-1.jpg"
+            alt="Glasses image"
+          />
+          <img
+            class="image image-2"
+            src="../assets/glasses-pics/glasses/brands/SpectraStyle/Eyeglasses/fall/TINIF/big-pic/tinif-color-cinnamon-gold-pos-2.jpg"
+            alt="Glasses image"
+          />
+          <img
+            class="image image-3"
+            src="../assets/glasses-pics/glasses/brands/SpectraStyle/Eyeglasses/fall/TINIF/big-pic/tinif-color-ink-silver-pos-2.jpg"
+            alt="Glasses image"
+          />
+        </div>
+
+        <div class="color-choice-container">
+          <label for="image-1">
+            <img
+              class="glasses-color-choice"
+              src="../assets/glasses-pics/colors/black-silver.jpg"
+              alt="Color Classic Havana"
+            />
+          </label>
+          <label for="image-2">
+            <img
+              class="glasses-color-choice"
+              src="../assets/glasses-pics/colors/cinnamon-gold.jpg"
+              alt="Color sapphire pewter"
+            />
+          </label>
+          <label for="image-3">
+            <img
+              class="glasses-color-choice"
+              src="../assets/glasses-pics/colors/ink-silver.jpg"
+              alt="Color sapphire pewter"
+            />
+          </label>
+        </div>
+        <div class="product-description">
+          <div>640 $</div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam totam
+          possimus placeat.
+        </div>
+      </div>
+
+      <footer class="footer-container">
+        <div class="contact-us-container">
+          <div class="cu-icons instgram-icon">
+            <a href="https://www.instagram.com">
+              <img
+                src="../assets/icons/social/social-instagram.svg"
+                alt="Instagram"
+            /></a>
+          </div>
+          <div class="cu-icons facebook-icon">
+            <a href="https://www.facebook.com">
+              <img
+                src="../assets/icons/social/social-facebook.svg"
+                alt="facebook"
+            /></a>
+          </div>
+          <div class="cu-icons tictok-iocn">
+            <a href="https://www.tiktok.com">
+              <img
+                src="../assets/icons/social/social-tiktok.svg"
+                alt="TicTok"
+              />
+            </a>
+          </div>
+          <div class="cu-icons mail-icon">
+            <a href="mailto:example@example.com"
+              ><img src="../assets/icons/contact/icon-email.svg" alt="Mail"
+            /></a>
+          </div>
+          <div class="cu-icons phon-icon">
+            <a href="tel:+1234567890"
+              ><i class="fa-solid fa-phone" style="color: #2a3663"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
