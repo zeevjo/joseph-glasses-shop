@@ -1,0 +1,216 @@
+@import url("../styles/root.css");
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .glasses-card-container {
+    text-align: center;
+    max-width: 260px;
+    min-height: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #faf6e3;
+    box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+    -webkit-box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+    -moz-box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--deep-blue);
+    font-family: "Outfit", serif;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glasses-card-container:hover img {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+  }
+
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 260px;
+  }
+
+  .image {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+  }
+
+  #image-1:checked ~ .image-container .image-1,
+  #image-2:checked ~ .image-container .image-2,
+  #image-3:checked ~ .image-container .image-3 {
+    display: block;
+  }
+
+  .color-choice-container {
+    width: 100%;
+  }
+
+  .color-choice-container label {
+    cursor: pointer;
+  }
+  .color-choice-container label img {
+    cursor: pointer;
+    width: 9%;
+    border-radius: 50%;
+    border: var(--deep-blue) 2px solid;
+  }
+  .color-choice-container label img:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .go-back-home-btn {
+    background: linear-gradient(to right, var(--deep-blue) 50%, transparent 50%);
+    background-size: 200%;
+    background-position: right;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1.5s ease;
+    min-width: 130px;
+    height: 34px;
+    border-radius: 1em;
+    border: 2px solid var(--deep-blue);
+    color: var(--deep-blue);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+
+  .go-back-home-btn:hover{
+    background-position: left;
+    color: var(--light-cream);
+    outline: 1px solid var(--light-cream);
+    border: 2px solid var(--deep-blue);
+  }
+
+}
+
+@media (min-width: 768px) {
+  .glasses-card-container {
+    text-align: center;
+    max-width: 650px;
+    min-height: 300px;
+    max-height: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #faf6e3;
+    box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+    -webkit-box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+    -moz-box-shadow: 9px 8px 15px -2px rgba(42, 54, 99, 0.7);
+
+    color: var(--deep-blue);
+    font-family: "Outfit", serif;
+
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .glasses-card-container:hover img {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+  }
+
+  .image-container {
+    grid-area: 1 / 1 / 4 / 2;
+    /* border: 2px solid red; */
+  }
+
+  .image-container img {
+    height: 100%;
+  }
+
+  .color-choice-container {
+    grid-area: 1 / 2 / 2 /4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 2px solid red; */
+  }
+
+  .color-choice-container label img {
+    border-radius: 50%;
+    width: 40%;
+    border: var(--deep-blue) 2px solid;
+    cursor: pointer;
+  }
+
+  .product-description {
+    grid-area: 2 / 2 / 3 /4;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+
+  .go-back-home {
+    grid-area: 3 / 2 / 4 /4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    /* border: 2px solid red; */
+  }
+
+  .go-back-home-btn {
+    background: linear-gradient(to right, var(--deep-blue) 50%, transparent 50%);
+    background-size: 200%;
+    background-position: right;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 2.7s ease;
+    width: 40%;
+    height: 34px;
+    border-radius: 1em;
+    border: 2px solid var(--deep-blue);
+    color: var(--deep-blue);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .go-back-home-btn:hover{
+    background-position: left;
+    color: var(--light-cream);
+  }
+
+  .image {
+    width: 100%;
+    display: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  #image-1:checked ~ .image-container .image-1,
+  #image-2:checked ~ .image-container .image-2,
+  #image-3:checked ~ .image-container .image-3 {
+    display: block;
+  }
+
+  .color-choice-container label img:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
+  }
+}

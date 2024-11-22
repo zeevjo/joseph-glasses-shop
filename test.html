@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Transition</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f4f6;
+    }
+
+    .fill-btn {
+      position: relative;
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(to right, #3498db 50%, transparent 50%);
+      background-size: 200%;
+      background-position: right;
+      border: 2px solid #3498db;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+      transition: all 1.5s ease;
+    }
+
+    .fill-btn:hover {
+      background-position: left;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="fill-btn">Hover Me</a>
+</body>
+</html>
