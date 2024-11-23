@@ -56,6 +56,16 @@ This project is a fully functional and responsive e-commerce website designed fo
 - Smooth animations implemented across the site for user interaction.
 - Transitions included in the navigation bar, product hover effects, and page loads.
 
+1. On :hover over a link in the navbar (on a laptop or wide screen), a line will transition under the link.
+
+2. On :hover over a social media icon in the footer, it will transition upwards by 5px.
+
+3. On :hover over the glasses image, it will transition by zooming in. Additionally, hovering over a color choice button will transition by scaling its size.
+
+4. On :hover over the "Home" button on the single item page (after clicking a product on the home page), the button will transition from left to right with a blue background and cream text color.
+
+### There are more animations and transitions throughout the project; however, I specifically mentioned these four to make them easy to identify, as the task requires four different transitions.
+
 ## Technologies Used
 
 - **HTML5**: Markup for structuring the site.
