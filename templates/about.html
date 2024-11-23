@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/favicon/glasses_14091684.png"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
     <title>About</title>
-</head>
-<body>
-    test
-</body>
+  </head>
+  <body>
+    <div class="site-container">
+      <nav class="navbar-container">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn">
+          <img src="../assets/icons/navbar/burger-menu.svg" alt="burger menu" />
+        </label>
+
+        <div class="menu">
+          <label for="menu-toggle" class="close-btn">✖</label>
+          <ul class="navbar-links">
+            <a href="/index.html">
+              <li class="navbar-l-item nb-li-home">Home</li>
+            </a>
+            <a href="../index.html#bs-container">
+              <li class="navbar-l-item nb-li-glasses">Glasses</li>
+            </a>
+            <a href="">
+              <li class="navbar-l-item nb-li-about">About</li>
+            </a>
+          </ul>
+        </div>
+
+        <img
+          class="shopping-cart"
+          src="../assets/icons/navbar/shopping-cart.svg"
+          alt="shopping cart"
+        />
+      </nav>
+
+      <div class="about-content-container">
+        <div class="about-content-card">
+          <div class="about-img-container">
+            <img
+              class="about-img"
+              src="../assets/about/creating-glasses.jpg"
+              alt="Creating Glasses"
+            />
+          </div>
+
+          <div class="about-story-container">
+            <p class="story">
+              Welcome to Joseph, where timeless elegance meets modern
+              craftsmanship. We are dedicated to creating luxury eyewear that
+              seamlessly combines sophistication, comfort, and innovation.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-content-card">
+          <div class="about-img-container">
+            <img
+              class="about-img"
+              src="../assets/about/glasses-sketch.jpg"
+              alt="Glasses Sketch"
+            />
+          </div>
+          <div class="about-story-container">
+            <p class="story">
+              Each pair of our glasses is a masterpiece, meticulously crafted
+              from the finest materials and designed to make a statement.
+              Inspired by classic aesthetics and contemporary trends, our
+              collections embody refinement and individuality.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-content-card">
+          <div class="about-img-container">
+            <img
+              class="about-img founder-img"
+              src="../assets/about/founder.jpg"
+              alt="Founder"
+            />
+          </div>
+          <div class="about-story-container">
+            <p class="story">
+              At Joseph, we believe eyewear is more than just an accessory it’s
+              a reflection of your personal style and an extension of your
+              confidence. Whether you're seeking the perfect frames to complete
+              your look or sunglasses that exude effortless charm, we are here
+              to deliver unparalleled quality and style.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-container">
+        <div class="contact-us-container">
+          <div class="cu-icons instgram-icon">
+            <a href="https://www.instagram.com">
+              <img
+                src="../assets/icons/social/social-instagram.svg"
+                alt="Instagram"
+            /></a>
+          </div>
+          <div class="cu-icons facebook-icon">
+            <a href="https://www.facebook.com">
+              <img
+                src="../assets/icons/social/social-facebook.svg"
+                alt="facebook"
+            /></a>
+          </div>
+          <div class="cu-icons tictok-iocn">
+            <a href="https://www.tiktok.com">
+              <img
+                src="../assets/icons/social/social-tiktok.svg"
+                alt="TicTok"
+              />
+            </a>
+          </div>
+          <div class="cu-icons mail-icon">
+            <a href="mailto:example@example.com"
+              ><img src="../assets/icons/contact/icon-email.svg" alt="Mail"
+            /></a>
+          </div>
+          <div class="cu-icons phon-icon">
+            <a href="tel:+1234567890"
+              ><i class="fa-solid fa-phone" style="color: #2a3663"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
