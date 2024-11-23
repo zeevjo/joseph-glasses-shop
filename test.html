@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Button Transition</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f3f4f6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+      /* General reset */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
 
-    .fill-btn {
-      position: relative;
-      display: inline-block;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff;
-      background: linear-gradient(to right, #3498db 50%, transparent 50%);
-      background-size: 200%;
-      background-position: right;
-      border: 2px solid #3498db;
-      border-radius: 4px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      overflow: hidden;
-      transition: all 1.5s ease;
-    }
+/* Element style */
+.hover-box {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Smooth transition for the movement */
+}
 
-    .fill-btn:hover {
-      background-position: left;
-      color: #fff;
-    }
-  </style>
+/* Hover effect */
+.hover-box:hover {
+    transform: translateY(-5px); /* Moves the element slightly up */
+}
+
+    </style>
 </head>
 <body>
-  <a href="#" class="fill-btn">Hover Me</a>
+    <div class="hover-box">Hover Me!</div>
 </body>
 </html>
