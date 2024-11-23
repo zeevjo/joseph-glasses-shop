@@ -153,13 +153,13 @@
 
   .product-description {
     grid-area: 2 / 2 / 3 /4;
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin: auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     /* border: 2px solid red; */
   }
@@ -168,7 +168,7 @@
     grid-area: 3 / 2 / 4 /4;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-decoration: none;
 
     /* border: 2px solid red; */
