@@ -12,7 +12,6 @@ https://joseph-glasses.netlify.app/
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Screenshots](#screenshots)
 - [Deployment](#deployment)
 
 ## About
