@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .contact-us-container {
@@ -26,6 +26,11 @@
 .cu-icons {
   min-width: 25px;
   max-width: 10%;
+  transition: transform 0.2s ease;
+}
+
+.cu-icons:hover {
+  transform: translateY(-5px);
 }
 
 .facebook-icon img {
