@@ -6,6 +6,7 @@
 @import url("/styles/product-card.css");
 @import url("/styles/footer.css");
 @import url("./styles/glasses-card.css");
+@import url("/styles/photoshoot.css");
 
 * {
   margin: 0;
