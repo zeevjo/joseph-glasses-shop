@@ -14,8 +14,6 @@ https://joseph-glasses.netlify.app/
 - [Getting Started](#getting-started)
 - [Screenshots](#screenshots)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
