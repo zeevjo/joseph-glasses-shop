@@ -3,7 +3,7 @@
 An e-commerce website for a glasses shop.
 The project fully completes the task instructions and features a fully responsive design with transitions.
 
-# Live demo
+# Live Demo
 https://joseph-glasses.netlify.app/
 
 ## Table of Contents
@@ -87,5 +87,6 @@ Follow these steps to view the project locally:
 
 # Deployment
 
-    Site is live and deployed on netlify.com
-        - https://joseph-glasses.netlify.app/
+## Site is live and deployed on netlify.com
+
+    https://joseph-glasses.netlify.app/
