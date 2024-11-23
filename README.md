@@ -89,4 +89,4 @@ Follow these steps to view the project locally:
 
 ## Site is live and deployed on netlify.com
 
-    https://joseph-glasses.netlify.app/
+https://joseph-glasses.netlify.app/
